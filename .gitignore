@@ -57,3 +57,5 @@ typings/
 # dotenv environment variables file
 .env
 
+# Do not commit k8s configuration
+.kube
