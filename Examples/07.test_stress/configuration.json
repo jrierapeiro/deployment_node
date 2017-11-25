@@ -1,8 +1,8 @@
 {
     "stressTests": [      
       {
-        "name": "GET location/get",
-        "relativeUrl": "/api/location/get?Ip=5.83.240.0",
+        "name": "GET Index",
+        "relativeUrl": "/",
         "options": {
           "method": "GET",
           "concurrency": 2,
