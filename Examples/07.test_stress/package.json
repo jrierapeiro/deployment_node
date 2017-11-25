@@ -1,0 +1,13 @@
+{
+  "name": "StressTests",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "stress": "node_modules/mocha/bin/_mocha stress --timeout 300000"
+  },
+  "dependencies": {
+    "chai": "^4.1.2",
+    "loadtest": "^2.3.0",
+    "q": "^1.5.1"
+  }
+}
