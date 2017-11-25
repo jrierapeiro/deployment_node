@@ -1,6 +1,6 @@
 'use strict';
 
-const configuration = require('configuration');
+const configuration = require('./testData.json');
 const expect = require('chai').expect;
 const loadtest = require('loadtest');
 const testDefinitions = configuration.stressTests;
