@@ -13,17 +13,18 @@ describe('Stress tests', function () {
     let endpointConfig = testDefinitions[0];
     endpointConfig.options.url = `${address}${endpointConfig.relativeUrl}`;
 
-    loadtest.loadTest(endpointConfig.options, function (error, testContext) {
+    loadtest.loadTest(endpointConfig.options, function (error, result) {
       if (error) {
-        throw new Error('Tests failed');
+        Console.log('Tests failed');
+        done();        
       }
       // show output
-      console.log(testContext.endpointConfig.name);
-      console.log(testContext.result);
+      console.log(endpointConfig.name);
+      console.log(result);
 
       //validate         
-      expect(testContext.result.totalErrors).to.be.within(...testContext.endpointConfig.thresholds.errors);
-      expect(testContext.result.meanLatencyMs).to.be.within(...testContext.endpointConfig.thresholds.meanLatency);
+      expect(result.totalErrors).to.be.within(...endpointConfig.thresholds.errors);
+      expect(result.meanLatencyMs).to.be.within(...endpointConfig.thresholds.meanLatency);
       done();
     });
   });

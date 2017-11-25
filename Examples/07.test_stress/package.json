@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "stress": "node_modules/mocha/bin/_mocha stress --timeout 300000"
+    "stress": "node_modules/mocha/bin/_mocha stressTests.js --timeout 300000"
   },
   "dependencies": {
     "chai": "^4.1.2",
