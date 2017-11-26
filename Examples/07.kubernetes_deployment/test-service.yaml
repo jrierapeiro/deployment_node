@@ -1,0 +1,14 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: test-service
+  namespace: default
+spec:
+  selector:
+    k8s-app: test
+  ports:
+  - protocol: TCP
+    port: 80
+    targetPort: 7000
+    nodePort: 32005
+  type: NodePort

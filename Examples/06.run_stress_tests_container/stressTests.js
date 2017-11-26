@@ -15,7 +15,7 @@ describe('Stress tests', function () {
 
     loadtest.loadTest(endpointConfig.options, function (error, result) {
       if (error) {
-        Console.log('Tests failed');
+        console.log('Tests failed');
         done();        
       }
       // show output
