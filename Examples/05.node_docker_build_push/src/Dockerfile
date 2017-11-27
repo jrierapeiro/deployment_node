@@ -1,6 +1,5 @@
-FROM node:8.9.1-slim
-LABEL maintainer="jariepei@gmail.com"
+FROM node:8.9.0-slim
 WORKDIR /usr/src/app
-COPY . .
+ADD . /usr/src/app
 EXPOSE 7000
-CMD [ "npm", "start" ]
+CMD npm start

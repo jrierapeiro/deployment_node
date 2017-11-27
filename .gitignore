@@ -59,3 +59,5 @@ typings/
 
 # Do not commit k8s configuration
 .kube
+
+package-lock.json

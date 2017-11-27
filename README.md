@@ -1,31 +1,20 @@
-# deployment_node
+# Node.js  - Docker - Kubernetes
 
-## Presentación de Docker
+## Autor
 
-¿Qué es Docker?
-¿Qué es un container?
-¿Qué plataformas están soportadas?
-¿Qué es una container image?
+Javier Riera Peiro (<https://twitter.com/jriera>) (<https://www.linkedin.com/in/javiriera>)
 
-## Línea de comandos de Docker
+## Docker
 
-docker images
-docker run (ejecutar nuestro primer container)
-docker ps (variantes para ver en ejecucion, ejecutados)
+- [0. Índice.](./Docker/00.index.md)
+- [1. Docker.](./Docker/01.docker.md)
+- [2. Imágenes.](./Docker/02.images.md)
+- [3. Contenedores.](./Docker/03.containers.md)
+- [4. Registro de imágenes.](./Docker/04.registry.md)
+- [5. Redes y contenedores.](./Docker/05.networking.md)
+- [6. Volúmenes.](./Docker/06.volumes.md)
 
-Ejecucion de un container con persistencia de datos (node app?)
+## Kubernetes
 
-## Dockerizando nuestra app
-
-Definición de Dockerfile
-- Base image
-- Comando que podemos añadir para instalar applicaciones adicionales
-- Creacion de una imagen de la aplicación actual
-- Ejecución del container que ejecute la aplicación actual
-
-## Hacer un deploy de nuestra app dockerizada
-
-Jenkins pipeline
-Build app
-Docker create image
-Kubernetes ???
+- [1. Configuración Tectonic Sandox](./Kubernetes/01.configuration.md)
+- [2. Gestión Tectonic Sandox](./Kubernetes/02.management.md)
