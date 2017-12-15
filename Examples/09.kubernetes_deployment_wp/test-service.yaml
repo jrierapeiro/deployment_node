@@ -1,0 +1,14 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: wordpress-service
+  namespace: apps
+spec:
+  selector:
+    k8s-app: wordpress
+  ports:
+  - protocol: TCP
+    port: 80
+    targetPort: 8080
+    nodePort: 32010
+  type: NodePort
