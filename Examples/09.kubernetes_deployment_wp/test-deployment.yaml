@@ -14,10 +14,10 @@ spec:
     spec:
       containers:
         - name: wordpress
-          image: wordpress
+          image: wordpress:4.9.1-php5.6-apache
           ports:
             - name: http
-              containerPort: 8080
+              containerPort: 80
           env:
           - name: WORDPRESS_DB_HOST
             valueFrom:
