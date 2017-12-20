@@ -6,7 +6,6 @@ Javier Riera Peiro (<https://twitter.com/jriera>) (<https://www.linkedin.com/in/
 
 ## Docker
 
-- [0. Índice.](./Docker/00.index.md)
 - [1. Docker.](./Docker/01.docker.md)
 - [2. Imágenes.](./Docker/02.images.md)
 - [3. Contenedores.](./Docker/03.containers.md)
