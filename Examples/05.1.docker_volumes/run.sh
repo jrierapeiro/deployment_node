@@ -25,3 +25,5 @@ docker run -d -p 7100:7000 -v vol-datos:/logs demo-vol:0.1
 http://127.0.0.1:7100/
 
 # Validamos el contenido del volumen donde hemos escrito los ficheros
+sudo ls /var/lib/docker/volumes/vol-datos/_data
+sudo cat  /var/lib/docker/volumes/vol-datos/_data/app_logs.txt
