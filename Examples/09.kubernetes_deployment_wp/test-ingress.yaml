@@ -2,7 +2,7 @@ apiVersion: extensions/v1beta1
 kind: Ingress
 metadata:
   name: wordpress-ingress
-  namespace: default
+  namespace: apps
   annotations:
     kubernetes.io/ingress.class: "tectonic"
     ingress.kubernetes.io/rewrite-target: /
@@ -10,7 +10,7 @@ metadata:
     ingress.kubernetes.io/use-port-in-redirects: "true"
 spec:
   rules:
-    - host: console.tectonicsandbox.com
+    - host: kube.northeurope.cloudapp.azure.com
       http:
         paths:
           - path: /wordpress
